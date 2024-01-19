@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+         * {padding: 0; margin: 0;}
+        ul,li,ol,dd,dl{list-style: none;}
+
+        .logo{
+            width: 100%;
+            text-align: center;
+            margin: 20px 0px;
+        }
+        .back{
+            background-image: url(images/bg.png);
+            
+        }
+
+        .gnb li{
+            display: inline-block;
+        }
+        .gnb li a{
+            display: block;
+            width: 80px;
+            height: 80px;
+            line-height: 80px;
+            text-align: center;
+            color: white;
+            text-decoration: none;
+
+        }
+        .gnb{
+            background-color: black;
+            text-align: center;
+            font-weight: bold;
+        }
+        .gnb>li>a:hover{
+            background-color: #4d4d4d;
+        }
+        .nav{overflow: hidden;}
+        .img{
+            width: 960px;
+            margin: auto;
+            overflow: hidden;
+        }
+        .img  > li{
+            text-align: center;
+             width: 25%;
+            margin: 40px 0;
+            float: left;
+            box-sizing: border-box;
+        }
+        .main2 {
+            background-color: white;
+            padding:0px 263px;
+        }
+        .icon{
+            background-color: white;
+            text-align: center;
+            position: sticky;
+            top: 0px;
+            z-index: 10;
+        }
+        .icon > ul > li{
+            display: inline-block;
+            padding: 10px;
+        }
+        .content{
+            text-align: center;
+            position: relative;
+        }
+
+        .content .imgbox{
+            width: 200px;
+            height: 290px;
+            position: absolute;
+            top: 0px;
+        }
+        .content .imgbox2{
+            width: 200px;
+            height: 290px;
+            position: absolute;
+            top: 0px;
+            right: 375px;
+        }
+    </style>
+
+
+</head>
+<body class="back">
+    
+    <header>
+        <div class="logo">
+        <img src="images/logo.jpg" alt="logo">
+    </div>
+    <nav class="nav">
+        <ul class ="gnb">
+
+            <li><a href="#">메뉴1</a></li>
+            <li><a href="#">메뉴1</a></li>
+            <li><a href="#">메뉴1</a></li>
+            <li><a href="#">메뉴1</a></li>
+
+        </ul>
+    </nav>
+    
+    </header>
+    <article class="main2">
+    <ul class="img">
+       <li> <img src="images/item01.png"><br><span>iPhone(디스플레이 or 플롯)</span></li>
+       <li> <img src="images/item02.png"><br>iPod</li>
+       <li> <img src="images/item03.png"><br>iPad</li>
+       <li>  <img src="images/item04.png"><br>iMac</li>
+    </ul>
+    </article>
+
+<div class="icon">
+    <ul>
+        <li>아이콘</li>
+        <li>아이콘</li>
+        <li>아이콘</li>
+        <li>스티키 </li>
+
+    </ul>
+</div>
+<section class="content">
+    <img src="images/ipad.jpg"> 
+    <section class="imgbox">
+        <img src="images/side01.png">
+        <img src="images/side02.png" style="margin-top: 20px;"><br>이거는포지션
+
+    </section>
+    <section class="imgbox2">
+        <img src="images/side03.png">
+        <img src="images/side04.png" style="margin-top: 20px;"><br>이거는포지션
+
+    </section>
+</section>
+
+</body>
+</html>
